@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+body header .navbar .descktop-menu {
+  display: none;
+}
+body header .navbar #menu-button-close {
+  display: none;
+}
+body main .mobile-menu {
+  margin: 0;
+  padding: 0;
+  padding-top: 35px;
+  height: 0;
+  /*height: calc(100vh - 111px);*/
+  display: none;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: hsl(270deg, 9%, 17%);
+}
+body main .mobile-menu a {
+  margin: auto;
+  margin: 10px;
+  width: 80%;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 19px;
+  border: 2px solid transparent;
+}
+body main .mobile-menu a:hover {
+  border: 2px solid white;
+}
+body main .mobile-menu svg {
+  position: absolute;
+  bottom: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */
