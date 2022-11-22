@@ -15,22 +15,30 @@ body header .navbar .descktop-menu {
 body header .navbar #menu-button-close {
   display: none;
 }
+body header .open #menu-button-close {
+  display: block;
+}
+body header .open #menu-button-open {
+  display: none;
+}
 body main .mobile-menu {
   margin: 0;
   padding: 0;
-  padding-top: 35px;
-  height: 0;
-  /*height: calc(100vh - 111px);*/
-  display: none;
+  display: flex;
+  overflow: hidden;
   position: relative;
+  align-items: center;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   background-color: hsl(270deg, 9%, 17%);
+  height: 0px;
+  overflow: hidden;
+  transition: height 1s;
 }
 body main .mobile-menu a {
   margin: auto;
-  margin: 10px;
+  margin: 5px;
   width: 80%;
   padding: 15px;
   text-align: center;
@@ -46,6 +54,11 @@ body main .mobile-menu a:hover {
 body main .mobile-menu svg {
   position: absolute;
   bottom: 0px;
+}
+body main .opened {
+  padding-top: 35px;
+  padding: 0;
+  height: calc(100vh - 360px);
 }
 
 /*# sourceMappingURL=style.css.map */
