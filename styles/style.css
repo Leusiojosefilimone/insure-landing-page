@@ -7,7 +7,7 @@ body header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 22px;
 }
 body header .navbar .descktop-menu {
   display: none;
@@ -56,9 +56,9 @@ body main .mobile-menu svg {
   bottom: 0px;
 }
 body main .opened {
-  padding-top: 35px;
   padding: 0;
   height: calc(100vh - 360px);
+  padding-top: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */
