@@ -7,7 +7,7 @@ body header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px;
+  padding: 18px;
 }
 body header .navbar .descktop-menu {
   background-color: red;
@@ -22,12 +22,16 @@ body header .open #menu-button-close {
 body header .open #menu-button-open {
   display: none;
 }
+body main {
+  margin-bottom: 40px;
+}
 body main .mobile-menu {
   margin: 0;
   padding: 0;
   display: flex;
   overflow: hidden;
-  position: relative;
+  position: fixed;
+  width: 100%;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
@@ -35,7 +39,7 @@ body main .mobile-menu {
   background-color: hsl(270deg, 9%, 17%);
   height: 0px;
   overflow: hidden;
-  transition: height 1s;
+  transition: height 0.5s;
 }
 body main .mobile-menu a {
   margin: auto;
@@ -61,7 +65,7 @@ body main .opened {
   width: 100%;
   z-index: 100;
   padding: 0;
-  height: calc(100vh - 287px);
+  height: calc(100vh - 76px);
   padding-top: 35px;
 }
 body main .picture-description {
@@ -73,34 +77,130 @@ body main .picture-description img {
 }
 body main .picture-description .description {
   position: relative;
+  height: 320px;
   margin: 10px 20px;
   text-align: center;
 }
 body main .picture-description .description #intro-left-mobile {
   position: absolute;
-  top: -25px;
-  left: -20px;
+  top: -65px;
+  left: -15px;
 }
 body main .picture-description .description #intro-right-mobile {
   position: absolute;
-  bottom: -170px;
-  right: -20px;
+  bottom: -190px;
+  right: -15px;
 }
 body main .picture-description .description aside h1 {
-  margin-top: 20px;
-  font-size: 30px;
+  margin-top: 60px;
+  font-size: 35px;
+  margin-bottom: 0;
 }
 body main .picture-description .description aside p {
   text-indent: 15px;
-  font-size: 12px;
+  font-size: 14px;
 }
 body main .picture-description .description aside button {
   color: white;
-  font-size: 16px;
-  border: 2px solid white;
+  border: 1px solid white;
   background: transparent;
   padding: 6px 20px;
-  margin: 20px;
+  margin: 20px 0 0 0;
+}
+body main .vantagens {
+  padding: 10px;
+}
+body main .vantagens hr {
+  width: 110px;
+  background: rgba(255, 0, 0, 0.37);
+}
+body main .vantagens h1 {
+  text-align: center;
+  font-size: 35px;
+}
+body main .vantagens span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 25px;
+}
+body main .vantagens span p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.568);
+}
+body main .more-about {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  height: 317px;
+  background: hsl(256deg, 26%, 20%);
+  color: white;
+}
+body main .more-about svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body main .more-about h1 {
+  font-size: 35px;
+  margin-top: 30px;
+}
+body main .more-about button {
+  color: white;
+  padding: 6px 20px;
+  background: transparent;
+  border: 1px solid white;
+}
+body footer {
+  background: hsl(0deg, 0%, 98%);
+}
+body footer .logo-redes {
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 150px;
+  border-bottom: 1px solid rgba(110, 108, 108, 0.274);
+}
+body footer .logo-redes #efeito-footer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body footer .logo-redes .logo {
+  margin: 15px;
+}
+body footer .logo-redes .redes {
+  margin-bottom: 10px;
+}
+body footer .logo-redes .redes svg {
+  margin-left: 10px;
+}
+body footer div {
+  padding: 10px;
+}
+body footer div span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body footer div span p {
+  color: rgba(0, 0, 0, 0.473);
+}
+body footer div span a {
+  text-decoration: none;
+  padding: 3px;
+  color: black;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
