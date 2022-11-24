@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 body header .navbar {
   display: flex;
@@ -10,7 +11,6 @@ body header .navbar {
   padding: 18px;
 }
 body header .navbar .descktop-menu {
-  background-color: red;
   display: none;
 }
 body header .navbar #menu-button-close {
@@ -80,6 +80,12 @@ body main .picture-description .description {
   height: 320px;
   margin: 10px 20px;
   text-align: center;
+}
+body main .picture-description .description #intro-right-desktop {
+  display: none;
+}
+body main .picture-description .description #intro-left-desktop {
+  display: none;
 }
 body main .picture-description .description #intro-left-mobile {
   position: absolute;
@@ -201,6 +207,128 @@ body footer div span a {
   padding: 3px;
   color: black;
   font-size: 16px;
+}
+
+@media screen and (min-width: 400px) {
+  body header .navbar {
+    padding: 10px 80px;
+  }
+  body header .navbar .descktop-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body header .navbar .descktop-menu a {
+    color: black;
+    padding: 5px 10px;
+    margin-right: 15px;
+    text-decoration: none;
+    border: 1px solid transparent;
+  }
+  body header .navbar .descktop-menu a:hover {
+    border: 1px solid black;
+  }
+  body header .navbar .menu-button {
+    display: none;
+  }
+  body main .mobile-menu {
+    display: none;
+  }
+  body main .picture-description {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 400px;
+    margin-bottom: 200px;
+  }
+  body main .picture-description aside {
+    display: flex;
+    width: 60%;
+    margin-left: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+  }
+  body main .picture-description .imagem {
+    width: 90%;
+    height: 100%;
+    position: relative;
+  }
+  body main .picture-description .imagem img {
+    width: 450px;
+    height: 500px;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    box-shadow: 2px 2px 3px black;
+  }
+  body main .picture-description .description {
+    position: static;
+  }
+  body main .picture-description .description #intro-left-mobile {
+    display: none;
+  }
+  body main .picture-description .description #intro-right-mobile {
+    display: none;
+  }
+  body main .picture-description .description #intro-right-desktop {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
+  body main .picture-description .description #intro-left-desktop {
+    display: block;
+    position: absolute;
+    left: -20px;
+    bottom: -270px;
+  }
+  body main .picture-description .description aside {
+    padding: 10px;
+  }
+  body main .picture-description .description aside h1 {
+    font-size: 45px;
+  }
+  body main .picture-description .description aside p {
+    font-size: 17px;
+    text-align: center;
+  }
+  body main .vantagens {
+    margin: 0 90px;
+  }
+  body main .vantagens h1 {
+    margin-bottom: 50px;
+    text-align: start;
+  }
+  body main .vantagens aside {
+    display: flex;
+  }
+  body main .vantagens aside span {
+    padding: 10px;
+  }
+  body main .more-about {
+    margin: auto;
+    height: 200px;
+    width: 80%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body main .more-about h1 {
+    width: 350px;
+  }
+  body footer .logo-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body footer .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
